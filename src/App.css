@@ -1,38 +1,131 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+html {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(./img/background.png);
+  background-size: 150%;
+  background-position: -100px -250px;
+  background-repeat: repeat-y;
+  box-sizing: border-box;
+}
+.search {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(./img/logo-search.png);
+  background-repeat: no-repeat;
+  background-position: 20px 7px;
+  padding: 12px 20px 12px 60px;
+  text-decoration: none;
+  border: none;
+  width: 68%;
+  margin: 20px auto;
+  display: block;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  color: #707070;
+}
+
+.container {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 70%;
+  height: 200px;
+  position: relative;
+  display: block;
+}
+
+.buttons {
+  margin: 30px auto;
+  margin-left: 14%;
+}
+
+.Difficulty-filter {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  color: #707070;
+  display: inline-block;
+  border: none;
   text-align: center;
+  text-decoration: none;
+  padding: 10px 50px;
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Difficulty-filter:focus {
+  transform: scale(1.1);
+  text-decoration: underline;
+  background-color: #0d9d58;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sub-title {
+  color: #4285f4;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sub-category {
+  color: #fcbc05;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sub-level {
+  color: #0d9d58;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sub-type {
+  color: #ea4334;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.start-button {
+  position: absolute;
+  background-color: #0d9d58;
+  border: none;
+  color: #f5f5f5;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  bottom: 10%;
+  right: 6%;
+  border-radius: 20px;
+}
+
+.start-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(56, 56, 56, 0.5);
+}
+
+.Details-button {
+  position: absolute;
+  background-color: #f5f5f5;
+  border: none;
+  color: #707070;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  bottom: 10%;
+  right: 30%;
+  border-radius: 20px;
+  width: 200px;
+  height: 30px;
+}
+
+.Details-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(56, 56, 56, 0.5);
 }
