@@ -1,4 +1,7 @@
+import { logRoles } from '@testing-library/react';
 import React, { useState } from 'react';
+import logos from "./logos.png";
+
 
 function LoginForm ({ Login , error }) {
     const [details,setDetails] = useState ({email: "", password :""});
@@ -9,7 +12,8 @@ function LoginForm ({ Login , error }) {
         Login(details);
   }
     return (
-        <form onSubmit={submitHandler}>
+        <form className='main' onSubmit={submitHandler}>
+
             <div className="form-inner">
             <div><h1>GDG <span>Ressources</span><x> Platform</x></h1></div>
                 <div className="form-group">
@@ -22,9 +26,15 @@ function LoginForm ({ Login , error }) {
                 </div>
                 {(error != "") ? ( <div className='error'>{error}</div>):""}
                 <input className='Login' type = "submit" value="Login" />
+                <div><h8>Don't have an account ? <button>Sign up</button>  </h8></div>
+
             </div>
-
+            <div className='logos'><img src={logos}></img></div>
         </form>
+         
     )}
-
-export default LoginForm
+//<div className='logos'><img src={logos}></img></div>
+export default LoginForm 
+//<button>Sign up</button>
+//<div className='logos'>
+                //<img src={logos}></img>

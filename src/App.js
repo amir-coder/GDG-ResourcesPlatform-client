@@ -26,14 +26,16 @@ function App() {
     return (
      <div className="App">
          {(user.email != "") ? (
-             <div className="ayooo wsup">
+             <div className="welcome">
                  <h2>Welcome,</h2>
              </div>
          ) : (
              <LoginForm Login={Login} error={error} />
+             
          )}
         
      </div>
+
     )}
      
      export default App;
