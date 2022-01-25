@@ -13,10 +13,11 @@ import logoGDG_1 from "../assets/GDG.svg";
 import logoWTM from "../assets/WTM_Logo.svg";
 import logoWTM_1 from "../assets/wtm logo.svg";
 import styled from "styled-components";
-import NavLink, { Link } from "react-router-dom";
+import NavLink, { Link, useRoutes } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import "./Sidebar.css";
+import { useNavigate } from 'react-router-dom';
 
 //Note: when i use the tag <Link to="../pages/Design"> </Link> instead of the <a> 
 //the sidebar will disappear
@@ -137,6 +138,7 @@ const Text = styled.span`
   }
 `;
 
+
 const Title = styled.ul`
   display: ${(props) => (props.clicked ? "flex" : "none")};
   align-items: center;
@@ -144,13 +146,16 @@ const Title = styled.ul`
   transition: all 0.5s ease;
   padding-bottom: 1rem;
 `;
-const al = styled.a`text-decoration: none;`;
+const a1 = styled.a`text-decoration: none;`;
 const Sidebar = () =>{
+
+
     const[click, setClick] = useState(false)
     const openSidebar = () => setClick(true)
     const closeSidebar = () => setClick(false)
+
     return(
-        <div>
+   
                 <nav className={click ? 'nav-menu active' : 'nav-menu'}> 
                     <ul className='nav-menu-items'>
 
@@ -168,31 +173,31 @@ const Sidebar = () =>{
                         </Title>
                         
                         <Item clicked={click}>
-                        <al href="../pages/AI">
+                        <Link to="/AI_ressorces" >
                             <img className="icon" src={ai} alt=""/>
                             <Text clicked={click}>Artificial intelligence</Text>
-                        </al>
+                        </Link>
                         </Item>
 
                         <Item clicked={click}>
-                          <al href="../pages/Design">
+                          <Link to="/Design_ressorces">
                             <img className="icon" src={design} alt=""/>
                             <Text clicked={click}>Design</Text>
-                          </al>
+                          </Link>
                         </Item >
 
                         <Item clicked={click}>
-                        <al href="../pages/WebDev">
+                        <Link to="/WebDev_ressorces">
                             <img className="icon" src={webdev} alt=""/>
                             <Text clicked={click}> Web developpement</Text>
-                        </al>
+                        </Link >
                         </Item>
 
                         <Item clicked={click}>
-                        <al href="../pages/MobileDev">
+                        <Link to="/MobileDev_ressorces">
                             <img className="icon" src={mobiledev} alt=""/>
                             <Text clicked={click}>Mobile developpement</Text>
-                        </al>
+                        </Link>
                         </Item>
 
                         <Line clicked={click}>
@@ -204,17 +209,17 @@ const Sidebar = () =>{
                         </Longline>
                         
                         <Item clicked={click}>
-                        <al href='../pages/Profile'>
+                        <Link to='/Profile' >
                             <img className="icon" src={profile} alt=""/>
                             <Text clicked={click}>Profile</Text>
-                        </al>
+                        </Link>
                         </Item>
 
                         <Item clicked={click}>
-                          <al href='../pages/Settings'>
+                          <Link to='/Settings'>
                             <img className="icon" src={settings} alt=""/>
                             <Text clicked={click}>Settings</Text>
-                          </al>
+                          </Link>
                         </Item>
 
                         <ClosedLogogdg clicked={click}>
@@ -233,9 +238,6 @@ const Sidebar = () =>{
 
                     </ul> 
                 </nav>
-                
-            
-        </div>
     );
 }
 export default Sidebar;

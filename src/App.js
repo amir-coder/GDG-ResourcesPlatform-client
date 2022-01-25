@@ -1,13 +1,20 @@
+
 import './App.css'
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import DesignComponent from './pages/Design';
 import Sidebar from './sidebar/Sidebar';
+import Home from './pages/Home';
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+;
+
 
 function App() {
   return (
-      <div className='App'>
-       <Sidebar/> 
-      </div>         
+    
+      <BrowserRouter >
+        <Sidebar />
+        <Routes>
+           <Route path="/" element={<Home />}></Route>
+        </Routes>
+      </BrowserRouter>
    
   );
 }
