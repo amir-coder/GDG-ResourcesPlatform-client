@@ -2,11 +2,18 @@
   body{
     background-image: url("Background.png");
   }
+  .main{
+    padding: 40px;
+    align-items: center;
+    margin: auto;
+    border-radius: 100px;
+  }
   .App {
     justify-content: center;
-    display: flex; 
     padding-top: 90px;
     padding-bottom: 90px;
+    margin :auto;
+    display: flex;ss
 
   }
 .email{
@@ -18,12 +25,12 @@
   outline: none;
   font-weight: 50;
   color: #414141;
-  width: 550px;
   background: rgba(253, 253, 253, 0.5);
   border: none;
-  
   border-radius: 60px; 
-  margin-bottom: 40px;
+  margin-bottom: 15px;
+  margin-left: 35px;
+  width:95%;
 }
 .password {
   outline: none;
@@ -34,12 +41,12 @@
   color: #414141;
   appearance: none;
   height: 40px;
-  width: 500px;
+  width:95%;
   background: rgba(253, 253, 253, 0.5);
   border: none;
   border-radius: 60px; 
-  align-items: center;
   margin-bottom: 40px;
+  margin-left: 35px;
   
 }
  .Login{
@@ -56,12 +63,12 @@
     outline: none;
     float: right;
     cursor: pointer;
+    margin-right: 40px;
   }
   .Login:hover {
     background-color: #d34d4d; /* Green */
     color: rgb(253, 253, 253);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    transition-duration: 0.2s;
   }
  .form-inner h1{
       font-family: Montserrat,sans-serif;
@@ -90,6 +97,30 @@
     text-align: center;
     align-items: center;
 }
+h8{
+  font-family: montserrat,sans-serif;
+  color: #46B27F;
+  font-weight: lighter;
+  font-size: 25px;
+  margin-left: 40px;
+  margin-top: 50px;
+  font-size: 20px;
+  float: left;
+  margin-left: 80px;
+}
+h8 button {
+  font-family: montserrat,sans-serif;
+  cursor: pointer;
+  color: #46B27F;
+  font-weight: lighter;
+  font-size: 20px;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  appearance: none;
+  color: #46B27F;
+  margin-bottom: 90px;
+}
 .form-inner .form-group label{
   margin-left: 40px;
   font-family: montserrat,sans-serif;
@@ -107,7 +138,6 @@
   color: #080000;
   font-size: 25px;
 }
-
 
   
   
