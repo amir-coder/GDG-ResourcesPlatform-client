@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css'
 import Sidebar from './sidebar/Sidebar';
 import Home from './pages/Home';

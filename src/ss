@@ -1,0 +1,41 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family :montserrat, sans-serif;
+}
+.main {
+    align-items: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #e1e3eb;
+  }
+input, button{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+form .form-inner h1 span{
+
+    font: montserrat;
+    font-weight: lighter;
+    color: rgb(253, 21, 21);
+}  
+.App {
+    background-image: url("paper.gif");
+    display: flex;
+    height: 550px;
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 11px 12px 13px 12px rgb(207, 207, 207);
+    padding-top: 30px;
+    border-radius: 60px; 
+    background-color: white;}
+    
