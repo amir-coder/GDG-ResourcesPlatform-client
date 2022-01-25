@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="27.5" viewBox="0 0 19 27.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #707070;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Component_4_2" data-name="Component 4 – 2" transform="translate(1 1)">
+    <g id="figma" transform="translate(-5 -2)">
+      <path id="Path_5" data-name="Path 5" class="cls-1" d="M5,6.333A4.333,4.333,0,0,1,9.333,2h4.333v8.667H9.333A4.333,4.333,0,0,1,5,6.333Z"/>
+      <path id="Path_6" data-name="Path 6" class="cls-1" d="M12,2h4.333a4.333,4.333,0,1,1,0,8.667H12Z" transform="translate(1.333)"/>
+      <path id="Path_7" data-name="Path 7" class="cls-1" d="M12,13.333a4.333,4.333,0,1,1,4.333,4.333A4.333,4.333,0,0,1,12,13.333Z" transform="translate(1.333 1.417)"/>
+      <path id="Path_8" data-name="Path 8" class="cls-1" d="M5,20.333A4.333,4.333,0,0,1,9.333,16h4.333v4.333a4.333,4.333,0,1,1-8.667,0Z" transform="translate(0 2.833)"/>
+      <path id="Path_9" data-name="Path 9" class="cls-1" d="M5,13.333A4.333,4.333,0,0,1,9.333,9h4.333v8.667H9.333A4.333,4.333,0,0,1,5,13.333Z" transform="translate(0 1.417)"/>
+    </g>
+  </g>
+</svg>
