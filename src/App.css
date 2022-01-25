@@ -1,38 +1,113 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+html {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(./img/background.png);
+  background-size: cover;
+  background-repeat: repeat;
+  box-sizing: border-box;
+  color: #707070;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #0d9d58;
+}
+
+body {
+  position: relative;
+}
+
+.fas {
+  color: #0d9d58;
+  font-size: 50px;
+  position: fixed;
+  top: 30px;
+  left: 55px;
+}
+
+h1::after {
+  content: " Platform";
+  color: #707070;
+  /* font-size:px; */
+  /* font-weight: ; */
+  /* font-family: ; */
+}
+
+h1 {
+  color: #ea4334;
+}
+
+h1::before {
+  content: "GDG ";
+  color: #ea4334;
+  /* font-size:px; */
+  /* font-weight: ; */
+  /* font-family: ; */
+}
+
+.form-content {
+  width: 80%;
+  margin: 10% auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-input {
+  border: none;
+  margin: 15px 50px;
+  width: 35%;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.form-input-login {
+  display: inline-block;
+  color: #0d9d58;
+  margin: 15px 10%;
+  position: absolute;
+  left: 20%;
+}
+
+.form-input-button {
+  display: inline-block;
+  margin: 10px 10%;
+  position: absolute;
+  left: 45%;
+  text-decoration: none;
+  border: none;
+  background-color: #0d9d58;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .form-input-login::after {
+    display: inline;
+    color: #0d9d58;
+    margin: 15px 10%;
+    position: absolute;
+    left: 20%;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .form-input-button {
+    display: inline;
+    margin: 10px 10%;
+    position: absolute;
+    left: 45%;
+    text-decoration: none;
+    border: none;
+    background-color: #0d9d58;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 20px;
   }
 }
