@@ -46,10 +46,8 @@ body{
   color: #414141;
   background: rgba(253, 253, 253, 0.5);
   border: none;
-  border-radius: 60px; 
   margin-bottom: 15px;
   margin-left: 35px;
-  width:95%;
 }
 .password {
   outline: none;
@@ -82,7 +80,6 @@ body{
     outline: none;
     float: right;
     cursor: pointer;
-    margin-right: 40px;
   }
   .Login:hover {
     background-color: #d34d4d; /* Green */
@@ -121,11 +118,9 @@ h8{
   color: #46B27F;
   font-weight: lighter;
   font-size: 25px;
-  margin-left: 40px;
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 20px;
   float: left;
-  margin-left: 80px;
 }
 h8 button {
   font-family: montserrat,sans-serif;
@@ -140,13 +135,22 @@ h8 button {
   color: #46B27F;
   margin-bottom: 90px;
 }
-.form-inner .form-group label{
-  margin-left: 40px;
-  font-family: montserrat,sans-serif;
-  font-weight: lighter;
-  color: #707070;
-  font-size: 25px;
 
+.form-inner .form-group {
+  display: flex;
+  justify-content: center;
+}
+.form-group-login {
+  display: flex;
+  justify-content: center;
+}
+
+.form-inner .form-group input {
+  width: 30rem;
+  border: 1px solid #00000022;
+  border-radius: 0.6rem;
+  padding: 3px 10px;
+  font-size: 18px;
 }
 .error{
   text-shadow: 2px 2px #0000001e;
