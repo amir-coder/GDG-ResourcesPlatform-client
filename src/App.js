@@ -1,41 +1,24 @@
-import React, { useState } from 'react';
-import LoginForm from "./LoginForm"
+import React from 'react';
+import './App.css'
+import Sidebar from './sidebar/Sidebar';
+import Home from './pages/Home';
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import Login from './pages/login';
+;
+
 
 function App() {
-  
-    const exampleuser = {
-        email: "codeit@gdg.com",
-        password: "Brainy"
-    }
-    const[user, setUser] = useState ({email : "", password:""});
-    const[error, setError] = useState ("");
-
-    const Login = details => {
-        console.log(details);
-
-        if(details.email == exampleuser.email && details.password == exampleuser.password){
-            console.log("logged in");
-            setUser({
-                email:details.email
-            })
-        } else {
-            console.log("Details do not match");
-            setError("Details do not match !");
-        }
-    }
-    return (
-     <div className="App">
-         {(user.email != "") ? (
-             <div className="welcome">
-                 <h2>Welcome,</h2>
-             </div>
-         ) : (
-             <LoginForm Login={Login} error={error} />
-             
-         )}
-        
-     </div>
-
-    )}
-     
-     export default App;
+  return (
+    <div className='App'>
+      <BrowserRouter >
+        <Sidebar />
+        <Routes>
+           <Route path="/" element={<Home />}></Route>
+           <Route path="/login" element={ <Login />}></Route>
+        </Routes>
+      </BrowserRouter>
+      </div>
+   
+  );
+}
+export default App;

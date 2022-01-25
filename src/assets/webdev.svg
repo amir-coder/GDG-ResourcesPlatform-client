@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #707070;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Component_5_2" data-name="Component 5 – 2" transform="translate(1 1)">
+    <g id="layout" transform="translate(-3 -3.333)">
+      <rect id="Rectangle_9" data-name="Rectangle 9" class="cls-1" width="21" height="21" rx="2" transform="translate(3 3.333)"/>
+      <line id="Line_4" data-name="Line 4" class="cls-1" x2="21" transform="translate(3 10.333)"/>
+      <line id="Line_5" data-name="Line 5" class="cls-1" y1="14" transform="translate(10 10.333)"/>
+    </g>
+  </g>
+</svg>

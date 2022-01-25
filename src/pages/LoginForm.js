@@ -1,6 +1,6 @@
 import { logRoles } from '@testing-library/react';
 import React, { useState } from 'react';
-import logos from "./logos.png";
+import logos from "../logos.png";
 
 
 function LoginForm ({ Login , error }) {
@@ -17,16 +17,17 @@ function LoginForm ({ Login , error }) {
             <div className="form-inner">
             <div><h1>GDG <span>Ressources</span><x> Platform</x></h1></div>
                 <div className="form-group">
-                    <label htmlFor="email">Email: </label>
-                    <input className='email' type="email" name="Email" id="email" onChange={e => setDetails({...details, email: e.target.value})} value = {details.email}/>
+                    <input className='email' placeholder='Email adress' type="email" name="Email" id="email" onChange={e => setDetails({...details, email: e.target.value})} value = {details.email}/>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="password">Password: </label>
-                    <input className="password" type="password" name="password" id="password" onChange={e => setDetails({...details, password: e.target.value})} value = {details.password}/>
+                    <input className="password" placeholder='Password'  type="password" name="password" id="password" onChange={e => setDetails({...details, password: e.target.value})} value = {details.password}/>
                 </div>
                 {(error != "") ? ( <div className='error'>{error}</div>):""}
-                <input className='Login' type = "submit" value="Login" />
-                <div><h8>Don't have an account ? <button>Sign up</button>  </h8></div>
+                <div className='form-group-login'>
+                   <input className='Login' type = "submit" value="Login" />
+                </div>
+                
+                <div className='form-group-login'><h8>Don't have an account ? <button>Sign up</button>  </h8></div>
 
             </div>
             <div className='logos'><img src={logos}></img></div>
