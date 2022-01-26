@@ -1,12 +1,11 @@
 import './App.css'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import DesignComponent from './pages/Design';
-import Sidebar from './sidebar/Sidebar';
-
+import Profile from './ProfilePage/Profile';
 function App() {
   return (
       <div className='App'>
-       <Sidebar/> 
+       <Profile/>
       </div>         
    
   );
