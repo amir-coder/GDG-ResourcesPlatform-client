@@ -8,6 +8,12 @@ a {
     outline: none;
     text-decoration: none;
 }
+
+.LinkSidebar {
+    outline: none;
+    text-decoration: none;
+}
+
 .gdglogo{
     padding-top: 1rem ;
     width: 160px;

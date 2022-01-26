@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import menu from "../assets/menu.svg";
-import design from "../assets/design.svg";
-import ai from "../assets/ai.svg";
-import webdev from "../assets/webdev.svg";
-import mobiledev from "../assets/mobdev.svg";
-import profile from "../assets/user.svg";
-import settings from "../assets/settings.svg";
-import longline from "../assets/Ligne 10.svg";
-import smalline from "../assets/Line 10.svg";
-import logoGDG from "../assets/GDG_logo-black.svg";
-import logoGDG_1 from "../assets/GDG.svg";
-import logoWTM from "../assets/WTM_Logo.svg";
-import logoWTM_1 from "../assets/wtm logo.svg";
+import menu from "../../assets/menu.svg";
+import design from "../../assets/design.svg";
+import ai from "../../assets/ai.svg";
+import webdev from "../../assets/webdev.svg";
+import mobiledev from "../../assets/mobdev.svg";
+import profile from "../../assets/user.svg";
+import settings from "../../assets/settings.svg";
+import longline from "../../assets/Ligne 10.svg";
+import smalline from "../../assets/Line 10.svg";
+import logoGDG from "../../assets/GDG_logo-black.svg";
+import logoGDG_1 from "../../assets/GDG.svg";
+import logoWTM from "../../assets/WTM_Logo.svg";
+import logoWTM_1 from "../../assets/wtm logo.svg";
 import styled from "styled-components";
 import NavLink, { Link, useRoutes } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
@@ -67,6 +67,8 @@ const Item = styled.li`
   color: var(--white);
   padding: 1rem 0;
   cursor: pointer;
+  outline: none;
+  text-decoration: none;
   display: flex;
   padding-left: ${(props) => (props.clicked ? "1rem" : "0.5rem")};;
   &:hover {
@@ -173,28 +175,28 @@ const Sidebar = () =>{
                         </Title>
                         
                         <Item clicked={click}>
-                        <Link to="/AI_ressorces" >
+                        <Link className='LinkSidebar' to="/AI_ressorces" >
                             <img className="icon" src={ai} alt=""/>
                             <Text clicked={click}>Artificial intelligence</Text>
                         </Link>
                         </Item>
 
                         <Item clicked={click}>
-                          <Link to="/Design_ressorces">
+                          <Link className='LinkSidebar' to="/Design_ressorces">
                             <img className="icon" src={design} alt=""/>
                             <Text clicked={click}>Design</Text>
                           </Link>
                         </Item >
 
                         <Item clicked={click}>
-                        <Link to="/WebDev_ressorces">
+                        <Link className='LinkSidebar' to="/WebDev_ressorces">
                             <img className="icon" src={webdev} alt=""/>
                             <Text clicked={click}> Web developpement</Text>
                         </Link >
                         </Item>
 
                         <Item clicked={click}>
-                        <Link to="/MobileDev_ressorces">
+                        <Link className='LinkSidebar' to="/MobileDev_ressorces">
                             <img className="icon" src={mobiledev} alt=""/>
                             <Text clicked={click}>Mobile developpement</Text>
                         </Link>
@@ -209,14 +211,14 @@ const Sidebar = () =>{
                         </Longline>
                         
                         <Item clicked={click}>
-                        <Link to='/Profile' >
+                        <Link className='LinkSidebar' to='/Profile' >
                             <img className="icon" src={profile} alt=""/>
                             <Text clicked={click}>Profile</Text>
                         </Link>
                         </Item>
 
                         <Item clicked={click}>
-                          <Link to='/Settings'>
+                          <Link className='LinkSidebar' to='/Settings'>
                             <img className="icon" src={settings} alt=""/>
                             <Text clicked={click}>Settings</Text>
                           </Link>

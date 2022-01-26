@@ -1,6 +1,6 @@
 import React from "react";
-import avatar from "../avatar.jpg";
-import "../App.css";
+import avatar from "../../avatar.jpg";
+import "./EditProfil.css";
 
 const EditProfile = () => {
   return (
@@ -19,7 +19,7 @@ const EditProfile = () => {
           </p>
         </div>
         <div className="informations">
-          <p className="username">
+        <p className="username">
             <input type="text" placeholder="Sami bcht"></input>
             <i class="fas fa-pen"></i>
           </p>
@@ -45,3 +45,24 @@ const EditProfile = () => {
 };
 
 export default EditProfile;
+/*
+<p className="username">
+            <input type="text" placeholder="Sami bcht"></input>
+            <i class="fas fa-pen"></i>
+          </p>
+          <p className="fullname">
+            <input type="text" placeholder="Bouchbout Sami"></input>
+            <i class="fas fa-pen"></i>
+          </p>
+          <p className="mail">
+            <input type="email" placeholder="ks_bouchbout@esi.dz"></input>
+            <i class="fas fa-pen"></i>
+          </p>
+          <p className="discord">
+            <input type="text" placeholder="SAMI#6047"></input>
+            <i class="fas fa-pen"></i>
+          </p>
+          <button type="button" className="save-changes">
+            Save changes
+          </button>
+*/

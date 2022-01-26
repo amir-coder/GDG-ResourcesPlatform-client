@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./Profile.css";
-import avatar from "../assets/avatar.svg";
+import avatar from "../../assets/avatar.svg";
 function Profile(){
     return(
         <div className='profilecontainer'>

@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-size: cover;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.vp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  margin-top: 200px;
+  background: none;
+}
+
+
+.container {
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  padding: 50px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.profile {
+  width: 50%;
+}
+
+
+
+.informations {
+  padding: 5px;
+  color: #707070;
+  text-align: left;
+  width: 40%;
+}
+
+p.username {
+  color: #707070;
+  border-bottom: 2px solid #4285f4;
+  margin-top: 10px;
+}
+
+p.fullname {
+  color: #707070;
+  border-bottom: 2px solid #fcbc05;
+  margin-top: 10px;
+}
+
+p.mail {
+  color: #707070;
+  border-bottom: 2px solid #ea4334;
+  margin-top: 10px;
+}
+
+p.discord {
+  color: #707070;
+  border-bottom: 2px solid #0d9d58;
+  margin-top: 10px;
+}
+
+i {
+  color: #707070;
+}
+
+input {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  color: #fcbc05;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+a:visited {
+  color: #707070;
+}
+
+.informations p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  margin: 10px auto;
+}

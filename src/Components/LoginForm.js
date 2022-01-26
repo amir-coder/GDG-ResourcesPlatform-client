@@ -15,7 +15,7 @@ function LoginForm ({ Login , error }) {
         <form className='main' onSubmit={submitHandler}>
 
             <div className="form-inner">
-            <div><h1>GDG <span>Ressources</span><x> Platform</x></h1></div>
+            <div><h1><span>Ressources</span></h1></div>
                 <div className="form-group">
                     <input className='email' placeholder='Email adress' type="email" name="Email" id="email" onChange={e => setDetails({...details, email: e.target.value})} value = {details.email}/>
                 </div>
@@ -34,8 +34,4 @@ function LoginForm ({ Login , error }) {
         </form>
          
     )}
-//<div className='logos'><img src={logos}></img></div>
 export default LoginForm 
-//<button>Sign up</button>
-//<div className='logos'>
-                //<img src={logos}></img>

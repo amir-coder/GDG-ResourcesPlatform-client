@@ -4,7 +4,7 @@ import "../App.css";
 function Button({ button, filter }) {
   return (
     <div className="buttons">
-      {button.map((Level, i) => {
+      {["All","Beginner" , "intermediate","Advanced"].map((Level, i) => {
         return (
           <button
             type="button"

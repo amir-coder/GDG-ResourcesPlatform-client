@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import LoginForm from "./LoginForm"
-
+import LoginForm from "../../Components/LoginForm"
+import './Login.css'
 function Login() {
   
     const exampleuser = {
@@ -31,7 +31,10 @@ function Login() {
                  <h2>Welcome,</h2>
              </div>
          ) : (
-             <LoginForm Login={Login} error={error} />
+             <div className='LoginPere'>
+                 <LoginForm Login={Login} error={error} />
+             </div>
+             
              
          )}
         

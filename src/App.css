@@ -3,12 +3,13 @@
 
 html {
   font-family: "Montserrat", sans-serif;
-  background-image: url(./ProfilePage/assets/background.png);
+  background-image: url(./pages/Profile/assets/background.png);
   background-size: cover;
   background-repeat: repeat;
   box-sizing: border-box;
   color: #707070;
 }
+
 
 .App {
   text-align: left;
@@ -49,3 +50,4 @@ html {
     transform: rotate(360deg);
   }
 }
+
