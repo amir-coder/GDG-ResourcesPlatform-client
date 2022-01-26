@@ -1,6 +1,5 @@
 import './App.css'
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import DesignComponent from './pages/Design';
 import Profile from './ProfilePage/Profile';
 function App() {
   return (
