@@ -1,12 +1,3 @@
-html {
-    font-family: "Montserrat", sans-serif;
-    background-image: url(./assets/background.png);
-    background-size: cover;
-    background-repeat: repeat;
-    box-sizing: border-box;
-    color: #707070;
-  }
-
 .Profile{
     position: absolute;
     display: flex;

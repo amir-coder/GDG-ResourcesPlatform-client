@@ -1,11 +1,21 @@
+
 import './App.css'
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import Sidebar from './sidebar/Sidebar';
 import Profile from './ProfilePage/Profile';
+import Home from './pages/Home';
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+
+
 function App() {
   return (
-      <div className='App'>
-       <Profile/>
-      </div>         
+    
+      <BrowserRouter >
+        <Sidebar />
+        <Profile/>
+        <Routes>
+           <Route path="/" element={<Home />}></Route>
+        </Routes>
+      </BrowserRouter>
    
   );
 }
