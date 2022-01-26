@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(./img/background.png);
+  background-size: cover;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.vp {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 40%;
+  height: 70%;
+  padding: 50px;
+  margin: 12% auto;
+  text-align: center;
+  border-radius: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.informations {
+  padding: 5px;
+  color: #707070;
+  text-align: left;
+}
+
+p.username {
+  color: #707070;
+  border-bottom: 2px solid #4285f4;
+  margin-top: 10px;
+}
+
+p.fullname {
+  color: #707070;
+  border-bottom: 2px solid #fcbc05;
+  margin-top: 10px;
+}
+
+p.mail {
+  color: #707070;
+  border-bottom: 2px solid #ea4334;
+  margin-top: 10px;
+}
+
+p.discord {
+  color: #707070;
+  border-bottom: 2px solid #0d9d58;
+  margin-top: 10px;
+}
+
+i {
+  color: #707070;
+}
+
+input {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  color: #fcbc05;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+a:visited {
+  color: #707070;
+}
+
+.informations p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  margin: 10px auto;
 }
