@@ -60,7 +60,7 @@ function App() {
               Start
             </button>
             <button type="button" className="Details-button">
-              Details
+              Detail
             </button>
           </div>
         );
