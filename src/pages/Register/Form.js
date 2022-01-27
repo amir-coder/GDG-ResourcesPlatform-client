@@ -1,24 +1,64 @@
-import React from "react";
-import useForm from "../../Components/useForm";
-import validate from "../../validateInfo";
+import axios from "axios";
+import React, { useState } from "react";
+import { useCookies } from "react-cookie";
+import { Navigate } from "react-router-dom";
 import './Form.css'
 
+
 function Form() {
-  const { handleChange, values, handleSubmit, errors } = useForm(validate);
-  console.log(errors.email);
+  const [values, setValues] = useState({
+    fullName: "",
+    username: "",
+    email: "",
+    discordId: "",
+    password: "",
+    password2: "",
+  });
+  const [cookies , setCookies] = useCookies(["token"])
+  const [errors, setErrors] = useState("");
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setValues({
+      ...values,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios.post("http://localhost:4000/user/api/register", values).then( res => {
+        if (res.data.error) {
+            setValues({
+              fullName: "",
+              username: "",
+              email: "",
+              discordId: "",
+              password: "",
+              password2: "",
+            })
+            setErrors(res.data.error)
+        }  else {
+          setCookies('token' , res .data.token)
+          Navigate('/ressources/AI')
+        }
+    })
+  };
+
+  
   return (
+    <div>
     <div className="form-content">
       <a href="#">
         <i class="fas fa-arrow-left"></i>
       </a>
       <h1>Ressources</h1>
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="form" onSubmit={(e) =>handleSubmit(e)}>
         <input
           type="text"
-          name="fullname"
+          name="fullName"
           className="form-input"
           placeholder="Fullname"
-          value={values.fullname}
+          value={values.fullName}
           onChange={handleChange}
         />
 
@@ -43,10 +83,10 @@ function Form() {
 
         <input
           type="text"
-          name="discord"
+          name="discordId"
           className="form-input"
           placeholder="Discord ID"
-          value={values.discord}
+          value={values.discordId}
           onChange={handleChange}
         />
         <br />
@@ -70,15 +110,17 @@ function Form() {
           onChange={handleChange}
         />
         <br />
+        <p className="error">{errors}</p>
         <div className="links">
           <p className="form-input-login">
             Already have an account?<a href="#"> Login</a>
           </p>
-          <button className="form-input-button" type="submit">
+          <div className="form-input-button" onClick={(e)=>handleSubmit(e)} type="submit">
             Sign up
-          </button>
+          </div>
         </div>
       </form>
+    </div>
     </div>
   );
 }

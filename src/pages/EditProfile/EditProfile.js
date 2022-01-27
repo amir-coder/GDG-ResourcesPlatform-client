@@ -1,11 +1,43 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useCookies } from "react-cookie";
+import { useNavigate } from "react-router-dom";
 import avatar from "../../avatar.jpg";
 import "./EditProfil.css";
 
 const EditProfile = () => {
+  const [cookies , setCookies] = useCookies(["token"])
+  const naigate = useNavigate()
+  const [values, setValues] = useState({
+    fullName: "",
+    username: "",
+    email: "",
+    discordId: "",
+  });
+
+  useEffect(()=> {
+          axios.post("http://localhost:4000/user/getInfo",{token : cookies.token}).then(res => {
+              console.log(res.data)
+              setValues(res.data.values)
+          })
+  },[])
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setValues({
+      ...values,
+      [name]: value,
+    });
+  };
+  const handlSubmit = () => {
+    values.token = cookies.token
+    axios.post("http://localhost:4000/user/api/user-profile", values).then( res => {
+        console.log(res.data)
+  })
+  }
   return (
+    <div className="contain">
     <div className="vp">
-      <div className="container">
         <div className="profile">
           <img
             src={avatar}
@@ -20,27 +52,29 @@ const EditProfile = () => {
         </div>
         <div className="informations">
         <p className="username">
-            <input type="text" placeholder="Sami bcht"></input>
+            <input type="text" name="username" value={values.username} onChange={handleChange} placeholder="Sami bcht"></input>
             <i class="fas fa-pen"></i>
           </p>
-          <p className="fullname">
-            <input type="text" placeholder="Bouchbout Sami"></input>
+          <p className="fullName">
+            <input type="text" name="fullName" value={values.fullName} onChange={handleChange} placeholder="Bouchbout Sami"></input>
             <i class="fas fa-pen"></i>
           </p>
           <p className="mail">
-            <input type="email" placeholder="ks_bouchbout@esi.dz"></input>
+            <input type="email" name="email" value={values.email} onChange={handleChange} placeholder="ks_bouchbout@esi.dz"></input>
             <i class="fas fa-pen"></i>
           </p>
-          <p className="discord">
-            <input type="text" placeholder="SAMI#6047"></input>
+          <p className="discordId">
+            <input type="text" name="discordId" value={values.discordId} onChange={handleChange} placeholder="SAMI#6047"></input>
             <i class="fas fa-pen"></i>
           </p>
-          <button type="button" className="save-changes">
+          <div type="button" onClick={()=> handlSubmit() } className="save-changes">
             Save changes
-          </button>
+          </div>
         </div>
       </div>
-    </div>
+      </div>
+      
+    
   );
 };
 

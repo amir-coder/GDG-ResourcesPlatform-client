@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 
+
+.App {
+  width: 100%;
+  height: 100%;
+}
 .search {
   font-family: "Montserrat", sans-serif;
   background-image: url(../../img/logo-search.png);
@@ -18,17 +23,68 @@
   color: #707070;
 }
 
-.container {
-  text-align: left;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 20px;
-  padding: 20px;
-  margin: 20px auto;
-  width: 70%;
-  height: 200px;
-  position: relative;
-  display: block;
+
+
+
+
+.newcontainer {
+   width: 100%;
+   height: 100%;
+   margin: auto;
+   background-color: #FFF;
+   border-radius: 20px;
+   width: 70%;
+   padding: 20px 30px;
+   position: relative;
+   
 }
+.newCard p{
+  font-size: 18px;
+  font-weight: 500;
+}
+.newCard div {
+  margin-bottom: 15px;
+}
+
+.newCard .title p span  {
+    color: #1d5eb3;
+    font-weight: 800;
+}
+.newCard .category p span  {
+  color: #fcbc05;
+  font-weight: 800;
+}
+.newCard .level p span  {
+  color: #0d9d58;
+  font-weight: 800;
+}
+.newCard .type p span  {
+  color: #ea4334;
+  font-weight: 800;
+}
+.button {
+  width: 150px; 
+  height: 40px; 
+  text-align: center;
+  color: #FFF;
+  padding: 10px 20px;
+  background-color: #0d9d58;
+  font-weight: 600;
+  border-radius: 20px;
+}
+.button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.button.but2 {
+  background-color: #cac1c1;
+
+  position: absolute;
+  bottom: 20px;
+  right: 200px;
+}
+
 
 .buttons {
   margin: 30px auto;
@@ -46,98 +102,28 @@
   text-decoration: none;
   padding: 10px 50px;
   border-radius: 10px;
-  margin-left: 15px;
+  margin-right: 10px;
 }
-.Difficulty-filter:first-of-type:hover {
-  background-color: #4285f4;
-  color: #FFF;
+.Difficulty-filter:nth-of-type(1):hover {
+color: #FFF;
+background-color: #1d5eb3;
 }
 .Difficulty-filter:nth-of-type(2):hover {
+  color: #FFF;
   background-color: #0d9d58;
-  color: #FFF;
-}
-.Difficulty-filter:nth-of-type(3):hover {
-  background-color: #fcbc05;
-  color: #FFF;
-}
-.Difficulty-filter:nth-of-type(4):hover {
-  background-color: #ea4334;
-  color: #FFF;
-}
+  }
+  .Difficulty-filter:nth-of-type(3):hover {
+    color: #FFF;
+    background-color: #fcbc05;
+    }
+    .Difficulty-filter:nth-of-type(4):hover {
+      color: #FFF;
+      background-color: #ea4334;
+      }
 
-.card p {
-  padding-top: 15px;
-}
-
-.sub-title {
-  color: #4285f4;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.sub-category {
-  color: #fcbc05;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.sub-level {
-  color: #0d9d58;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-
-.sub-type {
-  color: #ea4334;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.start-button {
-  position: absolute;
+.Difficulty-filter:focus {
+  transform: scale(1.1);
+  text-decoration: underline;
   background-color: #0d9d58;
-  border: none;
-  color: #f5f5f5;
-  width: 150px;
-  height: 40px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  bottom: 10%;
-  right: 6%;
-  border-radius: 20px;
-}
-
-.start-button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(56, 56, 56, 0.5);
-}
-
-.Details-button {
-  position: absolute;
-  background-color: #f5f5f5;
-  border: none;
-  color: #707070;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  bottom: 10%;
-  right: 30%;
-  border-radius: 20px;
-  width: 150px;
-  height: 40px;
-}
-
-.Details-button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(56, 56, 56, 0.5);
-}
-
-.form-input-login {
-  color: #0d9d58;
+  color: white;
 }

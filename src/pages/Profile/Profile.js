@@ -1,17 +1,37 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Profile.css";
 import avatar from "../../assets/avatar.svg";
+import axios from 'axios';
+import { useCookies } from 'react-cookie';
+import { useNavigate } from 'react-router-dom';
 function Profile(){
+    const [cookies , setCookies] = useCookies(["token"])
+    const naigate = useNavigate()
+    const [values, setValues] = useState({
+        username : "",
+        email : "" ,
+        fullName : "",
+        discordId : ""
+    })
+
+    useEffect(()=> {
+            axios.post("http://localhost:4000/user/getInfo",{token : cookies.token}).then(res => {
+                console.log(res.data)
+                setValues(res.data.values)
+            })
+    },[])
+
+
     return(
         <div className='profilecontainer'>
             <ul className='profileBox'>
                 <li className='avatarcontainer'>
                     <img className='avatar' src={avatar} alt=""/>
                 </li>
-                <li className='personal-info' ><span  className='sub-username'>UserName :</span> <output className='info'>Saradrb</output></li>
-                <li className='personal-info' ><span className='sub-fullname'>Full Name :</span><output className='info'>Sara Dorbane</output></li>
-                <li className='personal-info' ><span className='sub-email'>E-mail :</span><output className='info'>js_dorbane@esi.dz</output></li>
-                <li className='personal-info' ><span className='sub-discord'>Discord ID :</span><output className='info'>#sara0504</output></li>
+                <li className='personal-info' ><span  className='sub-username'>UserName :</span> <output className='info'>{values.username}</output></li>
+                <li className='personal-info' ><span className='sub-fullname'>Full Name :</span><output className='info'>{values.fullName}</output></li>
+                <li className='personal-info' ><span className='sub-email'>E-mail :</span><output className='info'>{values.email}</output></li>
+                <li className='personal-info' ><span className='sub-discord'>Discord ID :</span><output className='info'>{values.discordId}</output></li>
                
             </ul>
             <div className='infoSection'>

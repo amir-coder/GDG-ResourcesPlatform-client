@@ -1,39 +1,22 @@
 [
   {
-    "Title": "React JS",
-    "Category": "Web dev",
-    "Level": "Beginner",
-    "Type": "Video"
+    "title": "React JS",
+    "category": "AI",
+    "level": "Beginner",
+    "type": "Video"
   },
 
   {
-    "Title": "Flutter",
-    "Category": "Mobile dev",
-    "Level": "intermediate",
-    "Type": "Video"
+    "title": "Flutter",
+    "category": "AI",
+    "level": "intermediate",
+    "type": "Video"
   },
+ 
   {
-    "Title": "Node JS",
-    "Category": "Web dev",
-    "Level": "Beginner",
-    "Type": "Documentation"
-  },
-  {
-    "Title": "new course",
-    "Category": "Infography",
-    "Level": "Beginner",
-    "Type": "Video"
-  },
-  {
-    "Title": "Mango DB",
-    "Category": "Data bases",
-    "Level": "Advanced",
-    "Type": "Podcast"
-  },
-  {
-    "Title": "Motion design",
-    "Category": "Design",
-    "Level": "intermediate",
-    "Type": "Video"
+    "title": "Mango DB",
+    "category": "MobileDev",
+    "level": "Advanced",
+    "type": "Podcast"
   }
 ]

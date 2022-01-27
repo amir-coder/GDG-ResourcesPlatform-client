@@ -175,28 +175,28 @@ const Sidebar = () =>{
                         </Title>
                         
                         <Item clicked={click}>
-                        <Link className='LinkSidebar' to="/AI_ressorces" >
+                        <Link className='LinkSidebar' to="/ressources/AI" >
                             <img className="icon" src={ai} alt=""/>
                             <Text clicked={click}>Artificial intelligence</Text>
                         </Link>
                         </Item>
 
                         <Item clicked={click}>
-                          <Link className='LinkSidebar' to="/Design_ressorces">
+                          <Link className='LinkSidebar' to="/ressources/Design">
                             <img className="icon" src={design} alt=""/>
                             <Text clicked={click}>Design</Text>
                           </Link>
                         </Item >
 
                         <Item clicked={click}>
-                        <Link className='LinkSidebar' to="/WebDev_ressorces">
+                        <Link className='LinkSidebar' to="/ressources/WebDev">
                             <img className="icon" src={webdev} alt=""/>
                             <Text clicked={click}> Web developpement</Text>
                         </Link >
                         </Item>
 
                         <Item clicked={click}>
-                        <Link className='LinkSidebar' to="/MobileDev_ressorces">
+                        <Link className='LinkSidebar' to="/ressources/MobileDev">
                             <img className="icon" src={mobiledev} alt=""/>
                             <Text clicked={click}>Mobile developpement</Text>
                         </Link>

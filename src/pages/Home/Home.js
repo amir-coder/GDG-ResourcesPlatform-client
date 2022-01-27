@@ -2,15 +2,18 @@ import React from "react";
 import "./Home.css";
 import gdg from "../../img/Logo-gdg.png";
 import wtm from "../../img/Logo-wtm.png";
+import { useNavigate } from "react-router-dom";
 
 const Homepage = () => {
+
+  const navigate = useNavigate()
   return (
     <div className="container">
       <div className="login-signup">
-        <div type="button" className="login">
+        <div type="button" className="login" onClick={()=>navigate("/login")}>
           Login
         </div>
-        <div type="button" className="signup">
+        <div type="button" className="signup" onClick={()=>navigate("/register")}>
           Signup
         </div>
       </div>
@@ -19,7 +22,7 @@ const Homepage = () => {
         <p className="texte">
           This is where gdg members improve <br /> their skills in all feilds
         </p>
-        <div type="button" className="start-btn">
+        <div type="button" className="start-btn" onClick={()=>navigate("/ressources/AI")}>
           Get started
         </div>
       </div>

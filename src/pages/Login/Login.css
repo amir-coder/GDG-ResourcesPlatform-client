@@ -143,12 +143,12 @@
   }
   .error{
     text-shadow: 2px 2px #0000001e;
-    margin-left: 40px;
+    text-align: center;
     margin-bottom: 40px;
     font-family: Montserrat,sans-serif;
     font-weight: lighter;
-    color: #080000;
-    font-size: 25px;
+    color: #d34d4d;
+    font-size: 16px;
   }
   
     

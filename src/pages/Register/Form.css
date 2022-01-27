@@ -103,3 +103,9 @@ h1::before {
     border-radius: 20px;
   }
 }
+
+.error {
+  color: #ea4334 ;
+  margin-top: 10px;
+  font-size: 18px;
+}

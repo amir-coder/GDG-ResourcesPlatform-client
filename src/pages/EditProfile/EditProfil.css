@@ -2,6 +2,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-image: url(../../img/background.png);
   background-size: cover;
   box-sizing: border-box;
   margin: 0;
@@ -10,43 +11,42 @@ body {
   width: 100%;
   overflow: hidden;
 }
-
+.contain {
+  margin-top: 10%;
+}
 .vp {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
+  width: 70%;
+  background-color: #FFFFFF;
+  padding: 100px 20PX;
+  margin-top: 15%;
   margin: auto;
-  width: 100%;
-  margin-top: 200px;
-  background: none;
 }
 
-
-.container {
-
+.contahiner {
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 40%;
   height: 70%;
   padding: 50px;
+  margin: 12% auto;
   text-align: center;
   border-radius: 25px;
 }
-
-.profile {
-  width: 50%;
-}
-
-
 
 .informations {
   padding: 5px;
   color: #707070;
   text-align: left;
-  width: 40%;
+  background : none;
+  margin-left: 200px;
 }
 
 p.username {
@@ -55,7 +55,7 @@ p.username {
   margin-top: 10px;
 }
 
-p.fullname {
+p.fullName {
   color: #707070;
   border-bottom: 2px solid #fcbc05;
   margin-top: 10px;
@@ -67,7 +67,7 @@ p.mail {
   margin-top: 10px;
 }
 
-p.discord {
+p.discordId {
   color: #707070;
   border-bottom: 2px solid #0d9d58;
   margin-top: 10px;
@@ -81,13 +81,14 @@ input {
   border: none;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  background: none;
 }
 
 input:focus {
   outline: none;
 }
 
-button {
+.save-changes {
   font-family: "Montserrat", sans-serif;
   color: #fcbc05;
   font-size: 20px;
@@ -96,7 +97,10 @@ button {
   background-color: transparent;
   position: absolute;
   bottom: 10%;
-  right: 10%;
+  right: 35%;
+}
+.save-changes:hover {
+  color: #fcbc0599;
 }
 
 a:visited {
