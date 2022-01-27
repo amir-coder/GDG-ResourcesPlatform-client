@@ -1,53 +1,104 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
 html {
-  font-family: "Montserrat", sans-serif;
-  background-image: url(./pages/Profile/assets/background.png);
+  background-image: url(./img/background.png);
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
   color: #707070;
 }
 
-
-.App {
-  text-align: left;
-}
-
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  width: 90%;
+  height: 100vh;
+  margin: auto auto;
+}
+
+.login-signup {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 4%;
+}
+
+.login {
+  border: none;
+  background-color: white;
+  padding: 5px 25px;
+  border-radius: 15px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.signup {
+  cursor: pointer;
+  width: 100px;
+  border: none;
+  background-color: #0d9d58;
   color: white;
+  padding: 5px 25px;
+  border-radius: 15px;
+  margin-left: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gdg-ressources {
+  color: #ea4334;
+  margin-bottom: 30px;
 }
 
+.gdg-ressources::before {
+  content: "GDG ";
+  color: #ea4334;
+  font-weight: bold;
+}
+
+.gdg-ressources::after {
+  content: " Plateform";
+  color: #707070;
+}
+
+.texte {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.logos {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.start-btn {
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  background-color: white;
+  width: 13%;
+  padding: 15px 0;
+  border-radius: 20px;
+  cursor: pointer;
+}

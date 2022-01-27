@@ -1,15 +1,6 @@
-import React from 'react';
-import './App.css'
-import Sidebar from './Components/sidebar/Sidebar';
-import Profile from './pages/Profile/Profile';
-import Home from './pages/Home';
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
-import Login from './pages/Login/login';
-import EditProfile from "./pages/EditProfile/EditProfile"
-import Form from './pages/Register/Form';
-import RessourcePage from './pages/Ressorces/List';
-
-
+import React from "react";
+import "./App.css";
+import Homepage from "./Homepage";
 
 function App() {
   return (
@@ -27,7 +18,6 @@ function App() {
         </Routes>
       </BrowserRouter>
       </div>
-   
   );
 }
 export default App;
