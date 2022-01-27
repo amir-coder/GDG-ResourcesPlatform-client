@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="25.333" viewBox="0 0 23 25.333">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #707070;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Component_3_2" data-name="Component 3 – 2" transform="translate(1 1)">
+    <path id="zap" class="cls-1" d="M14.667,2,3,16H13.5l-1.167,9.333L24,11.333H13.5Z" transform="translate(-3 -2)"/>
+  </g>
+</svg>

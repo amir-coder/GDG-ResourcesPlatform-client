@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+
+.search {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../../img/logo-search.png);
+  background-repeat: no-repeat;
+  background-position: 20px 7px;
+  padding: 12px 20px 12px 60px;
+  text-decoration: none;
+  border: none;
+  width: 68%;
+  margin: 20px auto;
+  display: block;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  color: #707070;
+}
+
+.container {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 70%;
+  height: 200px;
+  position: relative;
+  display: block;
+}
+
+.buttons {
+  margin: 30px auto;
+  margin-left: 14%;
+}
+
+.Difficulty-filter {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  color: #707070;
+  display: inline-block;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 50px;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+.Difficulty-filter:first-of-type:hover {
+  background-color: #4285f4;
+  color: #FFF;
+}
+.Difficulty-filter:nth-of-type(2):hover {
+  background-color: #0d9d58;
+  color: #FFF;
+}
+.Difficulty-filter:nth-of-type(3):hover {
+  background-color: #fcbc05;
+  color: #FFF;
+}
+.Difficulty-filter:nth-of-type(4):hover {
+  background-color: #ea4334;
+  color: #FFF;
+}
+
+.card p {
+  padding-top: 15px;
+}
+
+.sub-title {
+  color: #4285f4;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sub-category {
+  color: #fcbc05;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sub-level {
+  color: #0d9d58;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+.sub-type {
+  color: #ea4334;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.start-button {
+  position: absolute;
+  background-color: #0d9d58;
+  border: none;
+  color: #f5f5f5;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  bottom: 10%;
+  right: 6%;
+  border-radius: 20px;
+}
+
+.start-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(56, 56, 56, 0.5);
+}
+
+.Details-button {
+  position: absolute;
+  background-color: #f5f5f5;
+  border: none;
+  color: #707070;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  bottom: 10%;
+  right: 30%;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+}
+
+.Details-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(56, 56, 56, 0.5);
+}
+
+.form-input-login {
+  color: #0d9d58;
+}

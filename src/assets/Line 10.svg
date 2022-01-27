@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="1" viewBox="0 0 41 1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #707070;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <line id="Line_10" data-name="Line 10" class="cls-1" x2="40" transform="translate(0.5 0.5)"/>
+</svg>
