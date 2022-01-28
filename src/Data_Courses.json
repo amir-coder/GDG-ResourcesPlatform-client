@@ -1,22 +1,22 @@
 [
   {
     "title": "React JS",
-    "category": "AI",
+    "categorie": "AI",
     "level": "Beginner",
-    "type": "Video"
+    "type_ressource": "Video"
   },
 
   {
     "title": "Flutter",
-    "category": "AI",
+    "categorie": "AI",
     "level": "intermediate",
-    "type": "Video"
+    "type_ressource": "Video"
   },
  
   {
     "title": "Mango DB",
-    "category": "MobileDev",
+    "categorie": "MobileDev",
     "level": "Advanced",
-    "type": "Podcast"
+    "type_ressource": "Podcast"
   }
 ]

@@ -28,15 +28,16 @@ function RessourcePage() {
 },[])
 
   useEffect(async()=> {
-    const res = await axios.get("http://localhost:4000/ressources/")
+    const res = await axios.get("https://gdg-api.herokuapp.com/ressources")
    const data = res.data
+   console.log(res.data);
    if (data.length > 0) {
-     setListItem(data.filter(val => val.category == id))
-     setListItemFilter(data.filter(val => val.category == id))
+     setListItem(data.filter(val => val.categorie == id))
+     setListItemFilter(data.filter(val => val.categorie == id))
    } 
    else {
-    setListItem(JSONDATA.filter(val => val.category == id))
-    setListItemFilter(JSONDATA.filter(val => val.category == id))
+    setListItem(JSONDATA.filter(val => val.categorie == id))
+    setListItemFilter(JSONDATA.filter(val => val.categorie == id))
     console.log(id)
    } 
    
@@ -95,13 +96,13 @@ function RessourcePage() {
                   <p><span>Title : </span> {val.title} </p>
                 </div>
                 <div className="category">
-                  <p><span>Category : </span> {val.category} </p>
+                  <p><span>Categorie : </span> {val.categorie} </p>
                 </div>
                 <div className="level">
                   <p><span>Level : </span> {val.level} </p>
                 </div>
                 <div className="type">
-                  <p><span>Type : </span> {val.type} </p>
+                  <p><span>Type : </span> {val.type_ressource} </p>
                 </div>
             </div>
             <div className="button ">

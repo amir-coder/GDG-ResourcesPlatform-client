@@ -218,7 +218,7 @@ const Sidebar = () =>{
                         </Item>
 
                         <Item clicked={click}>
-                          <Link className='LinkSidebar' to='/Settings'>
+                          <Link className='LinkSidebar' to='/editprofile'>
                             <img className="icon" src={settings} alt=""/>
                             <Text clicked={click}>Settings</Text>
                           </Link>

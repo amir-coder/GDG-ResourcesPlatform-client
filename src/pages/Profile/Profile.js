@@ -4,6 +4,7 @@ import avatar from "../../assets/avatar.svg";
 import axios from 'axios';
 import { useCookies } from 'react-cookie';
 import { useNavigate } from 'react-router-dom';
+import Sidebar from '../../Components/sidebar/Sidebar';
 function Profile(){
     const [cookies , setCookies] = useCookies(["token"])
     const naigate = useNavigate()
@@ -24,6 +25,7 @@ function Profile(){
 
     return(
         <div className='profilecontainer'>
+            <Sidebar />
             <ul className='profileBox'>
                 <li className='avatarcontainer'>
                     <img className='avatar' src={avatar} alt=""/>

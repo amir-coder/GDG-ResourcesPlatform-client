@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
 import avatar from "../../avatar.jpg";
+import Sidebar from "../../Components/sidebar/Sidebar";
 import "./EditProfil.css";
 
 const EditProfile = () => {
@@ -37,6 +38,7 @@ const EditProfile = () => {
   }
   return (
     <div className="contain">
+      <Sidebar />
     <div className="vp">
         <div className="profile">
           <img
