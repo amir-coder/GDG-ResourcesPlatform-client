@@ -1,0 +1,28 @@
+.input-box {
+    position: relative;
+    margin: 20px;
+    border-radius: 0;
+    margin-left: 20%;
+    margin-right: 10%;
+    z-index: -1;
+}
+
+form-control{
+    border-radius: 1rem;
+}
+
+.iconSearch{
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    color: #EA4334;
+}
+
+.contentDetailed{
+    background-color: #fff;
+    padding: 15px;
+    border: none;
+    margin-left: 20%;
+    margin-right: 10%;
+    
+}

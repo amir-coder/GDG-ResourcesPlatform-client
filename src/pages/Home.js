@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Home() {
+function DetailedRessource() {
   return <div>Home</div>;
 }
 
-export default Home;
+export default DetailedRessource;
