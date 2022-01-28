@@ -127,3 +127,28 @@ background-color: #1d5eb3;
   background-color: #0d9d58;
   color: white;
 }
+
+.Difficulty-filter.active.All {
+  background-color: #1d5eb3;
+  color: white;
+}
+
+.Difficulty-filter.active.Beginner {
+  background-color: #0d9d58;
+  color: white;
+}
+
+.Difficulty-filter.active.intermediate {
+  background-color: #fcbc05;
+  color: white;
+}
+
+.Difficulty-filter.active.Advanced {
+  background-color: #ea4334;
+  color: white;
+}
+
+.ListRessorces {
+  overflow-y: scroll;
+  background-color: aquamarine;
+}

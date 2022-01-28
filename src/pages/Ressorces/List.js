@@ -14,7 +14,7 @@ function RessourcePage() {
   const {id} = useParams();
   const [ListItemFilter, setListItemFilter] = useState([]);
   const [searchTopic, setSearchTopic] = useState("");
-  const [filterLevel, setFilterLevel] = useState(0);
+  const [filterLevel, setFilterLevel] = useState("All");
   const [cookies , setCookies] = useCookies(["token"])
   const navigate = useNavigate()
 
@@ -30,7 +30,7 @@ function RessourcePage() {
   useEffect(async()=> {
     const res = await axios.get("https://gdg-api.herokuapp.com/ressources")
    const data = res.data
-   console.log(res.data);
+   console.log(data);
    if (data.length > 0) {
      setListItem(data.filter(val => val.categorie == id))
      setListItemFilter(data.filter(val => val.categorie == id))
@@ -53,7 +53,7 @@ function RessourcePage() {
 
 
   return (
-    <div className="App">
+    <div className="App ListRessorces">
       <Sidebar />
       <input
         type="text"
@@ -71,8 +71,8 @@ function RessourcePage() {
           <div
             key={i}
             type="button"
-            className="Difficulty-filter"
-            onClick={()=> {onFilter(level[i])}}
+            className={`Difficulty-filter ${Level} ${Level == filterLevel ? "active" :""}`}
+            onClick={()=> {onFilter(level[i]);setFilterLevel(Level)} }
           >
             {Level}
           </div>
@@ -105,10 +105,10 @@ function RessourcePage() {
                   <p><span>Type : </span> {val.type_ressource} </p>
                 </div>
             </div>
-            <div className="button ">
+            <div className="button " onClick={()=>window.open(val.link)}>
                 start
             </div>
-            <div className="button but2">
+            <div className="button but2" onClick={()=>navigate(`/detailRessource/${val._id}`)}>
               detail
             </div>
           </div>

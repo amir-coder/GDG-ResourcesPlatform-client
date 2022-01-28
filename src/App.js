@@ -8,6 +8,8 @@ import EditProfile from "./pages/EditProfile/EditProfile"
 import Form from './pages/Register/Form';
 import RessourcePage from './pages/Ressorces/List';
 import Homepage from './pages/Home/Home';
+import Detailressource from './pages/DetailRessorce/DetailedRessource';
+
 
 
 
@@ -23,6 +25,7 @@ function App() {
            <Route path="/profile" element={<Profile />} />
            <Route path="/editProfile" element={<EditProfile />} />
            <Route path="/ressources/:id" element={<RessourcePage />} />
+           <Route path='/detailRessource/:id' element={<Detailressource />} />
         </Routes>
       </BrowserRouter>
       </div>

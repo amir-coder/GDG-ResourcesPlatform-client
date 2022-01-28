@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.DetailedRessorce {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10%
+}
+.DetailedRessorce .input-box {
+    position: relative;
+    margin: 20px;
+    border-radius: 0;
+    margin-left: 20%;
+    margin-right: 10%;
+    z-index: -1;
+}
+
+.DetailedRessorce form-control{
+    border-radius: 1rem;
+}
+
+.DetailedRessorce .iconSearch{
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    color: #EA4334;
+    size: 30px; 
+    background-color: aquamarine;
+}
+
+.DetailedRessorce .contentDetailed{
+    background-color: #fff;
+    padding: 15px;
+    border: none;
+    margin-left: 20%;
+    margin-right: 10%;
+    border-radius: 0.25rem;
+    padding: 2%;
+    
+}
+
+.DetailedRessorce .content{
+    font-family: sans-serif,montserrat;
+    font-size: 18px;
+    color: black;
+}
+
+.DetailedRessorce .closeButton{
+    background-color: #fff;
+    border: none;
+    font-size: 20px;
+    opacity: 50%;
+}
+
+
+.DetailedRessorce #title{
+    color: #4285F4;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.DetailedRessorce #category{
+    color: #FCBC05; 
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.DetailedRessorce #level{
+    color: #0D9D58;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.DetailedRessorce #type{
+    color: #EA4334;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.DetailedRessorce #description{
+    color: #4285F4;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.DetailedRessorce #start{
+    background-color: #0D9D58;
+    color: white;
+    height: 40px;
+    border-radius: 30px;
+
+}
+
+.DetailedRessorce #save{
+    background-color: white;
+    border: none;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.DetailedRessorce .buttons{
+    width: 15%;
+    margin: 10px;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.DetailedRessorce #save:hover{
+    
+    border: 1px solid;
+    border-color: #0D9D58;
+}
