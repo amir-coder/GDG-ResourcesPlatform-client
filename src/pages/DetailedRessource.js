@@ -19,17 +19,38 @@ function Home() {
          <BiSearch className='iconSearch'/> 
          <input type="text" class="form-control" placeholder='      search for a topic' style={{borderRadius : 100}}/>  </div>
     <div className='contentDetailed '>
-        <h2 id='title'>Title</h2>
-        <p>{title}</p>
-        <span><IoClose /></span>
-        <h2>Category</h2>
-        <p>{category}</p>
-        <h2>Level</h2>
-        <p>{level}</p>
-        <h2>Type</h2>
-        <p>{type}</p>
-        <h2>Description</h2>
-        <p>{description}</p>
+       <div style={{
+         display: 'flex',
+         justifyContent : 'space-between',
+         
+       }}>
+       <h4 id='title'>Title: <span className='content'>{title}</span></h4>
+        
+        <button className='closeButton'><IoClose /></button>
+       </div>
+        
+        
+        <h4 id='category'>Category <span className='content'>: {category}</span></h4>
+       
+        <h4 id='level'>Level <span className='content'>: {level} </span></h4>
+       
+        <h4 id='type'>Type<span className='content'>: {type} </span></h4>
+        
+        <h4 id='description'>Description <span className='content'>: </span></h4>
+        
+        <p className='content'> {description}</p>
+
+        <div style={{
+         display: 'flex',
+         justifyContent : 'right',
+         
+       }}>
+       
+        
+        <button id='save' className='buttons'>Save</button>
+        <button id='start' className='buttons'>Start</button>
+       </div>
+       
         
        
     </div>

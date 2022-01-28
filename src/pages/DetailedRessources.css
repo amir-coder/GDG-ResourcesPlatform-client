@@ -24,5 +24,64 @@ form-control{
     border: none;
     margin-left: 20%;
     margin-right: 10%;
+    border-radius: 0.25rem;
+    padding: 2%;
     
+}
+
+.content{
+    font-family: sans-serif,montserrat;
+    font-size: 18px;
+    color: black;
+}
+
+.closeButton{
+    background-color: #fff;
+    border: none;
+    font-size: 20px;
+    opacity: 50%;
+}
+
+
+#title{
+    color: #4285F4;
+}
+
+#category{
+    color: #FCBC05; 
+}
+
+#level{
+    color: #0D9D58;
+}
+
+#type{
+    color: #EA4334;
+}
+
+#description{
+    color: #4285F4;
+}
+
+#start{
+    background-color: #0D9D58;
+    color: white;
+}
+
+#save{
+    background-color: white;
+    border: none;
+}
+
+.buttons{
+    width: 15%;
+    margin: 10px;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+#save:hover{
+    
+    border: 1px solid;
+    border-color: #0D9D58;
 }
